@@ -10,7 +10,7 @@
     "dev": "npm run dev -w @dpds-gov/docs",
     "build:ds": "npm run build -w @dpds-gov/design-system",
     "build:docs": "npm run build -w @dpds-gov/docs",
-    "build": "npm run build:ds && npm run build:docs",
+    "build": "npm run build:docs",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "lint": "eslint ."
   },
