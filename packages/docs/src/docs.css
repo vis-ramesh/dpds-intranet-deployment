@@ -1,0 +1,55 @@
+/* Docs site Tailwind entry. The @import "tailwindcss" triggers @tailwindcss/vite to
+   compile utility classes used by docs source files, and the second import pulls in
+   DS's pre-built CSS so the @theme tokens (colors, radius, motion, shadows, fonts)
+   are visible to docs's Tailwind compilation. */
+@import "tailwindcss";
+
+/* The DS pre-built dist/styles.css is minified — @theme directives are already
+   compiled to CSS variables, so docs's Tailwind can't read them. Reference the
+   DS source styles.css for theme tokens (colors, fonts, motion, shadows) at
+   compile time only — no CSS inlined here. */
+@reference "../../design-system/src/styles.css";
+
+/* Pre-built DS utilities + @font-face rules (loaded at runtime, not compiled). */
+@import "@dpds-gov/design-system/styles.css";
+
+/* Scan docs source for utility classes Tailwind should emit. */
+@source "./**/*.{ts,tsx}";
+
+/* ── Shiki dual-theme code blocks (used by src/components/docs/code-block.tsx) ── */
+.docs-code-block .shiki {
+  padding: 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+.docs-code-block .shiki code {
+  font-family: inherit;
+}
+
+/* Light mode: shiki emits --shiki-light vars only (defaultColor:false), so we
+   must apply them as the actual color. Without this, light-mode code blocks
+   render as flat monochrome text (no highlighting). */
+.docs-code-block .shiki,
+.docs-code-block .shiki span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+  font-style: var(--shiki-light-font-style);
+  font-weight: var(--shiki-light-font-weight);
+  text-decoration: var(--shiki-light-text-decoration);
+}
+
+.dark .docs-code-block .shiki,
+.dark .docs-code-block .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* Override github-dark canvas background with DPDS slate-900 — keeps theme name + token colors intact */
+.dark .docs-code-block .shiki {
+  background-color: var(--color-slate-900) !important;
+}

@@ -1,0 +1,658 @@
+{
+  "$schema": "Entries are listed newest-first. Each entry: { date: YYYY-MM-DD, type, summary, details?, files? }. Types: added | changed | fixed | removed | docs | chore.",
+  "entries": [
+    {
+      "date": "2026-06-03",
+      "type": "added",
+      "summary": "AI skills now ship with the design system",
+      "details": [
+        "Services automatically receive updated AI agent instructions when they update the design system. No manual sync needed."
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "type": "changed",
+      "summary": "AI-built services now match wireframes more faithfully and use the right card for KPIs",
+      "details": [
+        "AI agents building services from the starter template now preserve multi-column wireframe layouts at desktop widths instead of folding them into a single column",
+        "The dedicated KPI card is now the default for any \"number + label + icon\" tile; the generic card is reserved for grouping other content",
+        "Captured a known design-system styling glitch with its workaround, with auto-tracking so the workaround comes off as soon as the next release fixes it"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "type": "fixed",
+      "summary": "Services now render the correct light-mode colors and sidebar styling without extra setup",
+      "details": [
+        "Service teams using the design system were seeing washed-out backgrounds in light mode and a missing sidebar surface — a piece the published bundle wasn't exposing",
+        "Bumping @dpds-gov/design-system to 0.1.2 in a service repo fixes it; Dependabot will offer the bump automatically on the next weekly run"
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "type": "added",
+      "summary": "Installation guide added to the docs",
+      "details": [
+        "A new Installation page under Getting Started walks teams through generating their access token, cloning a fresh service from the template, setting it up locally, and using the AI-assisted workflow to build their first service",
+        "Includes a troubleshooting table for the most common setup gotchas — expired tokens, wrong repo owner, missing CI secret, light-mode colours"
+      ],
+      "files": [
+        "packages/docs/src/pages/installation-page.tsx"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "type": "fixed",
+      "summary": "Services no longer need to install extra translation libraries to use the design system",
+      "details": [
+        "Earlier today's first release quietly required every team to install two extra translation libraries just so components flipped correctly between English and Arabic",
+        "This follow-up reads the page direction directly from the page itself — no extra libraries required",
+        "Teams that already use translation libraries for their own copy keep working unchanged"
+      ],
+      "files": [
+        "packages/design-system/src/hooks/use-is-rtl.ts"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "type": "added",
+      "summary": "Design system released — service teams can now use it in their own projects",
+      "details": [
+        "First public release of the design system, available to any team building a Dubai Police service",
+        "A starter template is now live — teams click 'Use this template' on GitHub to spin up a brand-new service and have it running in about ten minutes",
+        "Includes a fully working sample dashboard showing the standard page header, a grid of chart and KPI cards, and a paginated requests table — the common building blocks every service is expected to compose from"
+      ],
+      "files": [
+        "packages/design-system/package.json"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "type": "changed",
+      "summary": "Example layouts across the docs site are now consistent two-column",
+      "details": [
+        "Every page that shows example components now uses the same two-column side-by-side layout, even on narrow screens, so examples are easier to compare at a glance",
+        "Replaced one-off input-with-icon arrangements across the site with the standard grouped-input pattern, so search fields, prefixed inputs, and inline buttons all look and behave the same everywhere",
+        "Tightened a few spacing and motion details that surfaced along the way"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "type": "fixed",
+      "summary": "Fixed broken Label links in seven Form & Input pages",
+      "details": [
+        "Clicking 'Label' in the Related section of seven form pages was sending users to a placeholder 'Coming Soon' screen — now it opens the real Label page",
+        "Removed the unused placeholder screen so it can't be reached by accident anymore"
+      ],
+      "files": [
+        "src/App.tsx",
+        "src/pages/input-otp-page.tsx",
+        "src/pages/form-page.tsx",
+        "src/pages/input-page.tsx",
+        "src/pages/file-upload-page.tsx",
+        "src/pages/checkbox-page.tsx",
+        "src/pages/textarea-page.tsx",
+        "src/pages/radio-page.tsx"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "type": "changed",
+      "summary": "Browser tab icon updated to the Dubai Police Logo",
+      "details": [
+        "Replaces the generic purple icon that came with the starter template",
+        "Adjusted so it stays crisp at any browser tab size"
+      ],
+      "files": [
+        "public/favicon.svg"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "type": "changed",
+      "summary": "Cleaner sidebar with collapsible groups, plus a new footer on every page",
+      "details": [
+        "Each sidebar group (Getting Started, Foundations, Form & Input, and so on) can now be collapsed or expanded. Getting Started opens by default",
+        "Added a footer on every page showing the Dubai Police Design System 2.0 name and copyright line. The thin line above the footer runs all the way across the screen for visual consistency",
+        "The thin divider above the 'Related components' section on every component page is now tighter, and it's now applied automatically across all pages instead of being added one at a time",
+        "The sidebar's open/close button looks lighter, matching the page style better"
+      ],
+      "files": [
+        "src/components/app-sidebar.tsx",
+        "src/components/layout.tsx",
+        "src/components/docs/related-links.tsx",
+        "src/components/ui/sidebar.tsx"
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "type": "added",
+      "summary": "New Getting Started section with Introduction, Project Structure, Theming, and Dark Mode pages",
+      "details": [
+        "Built four new documentation pages: Introduction, Project Structure, Theming, and Dark Mode",
+        "Added a new theme switcher in the header — choose Light, Dark, or 'Match my system' with a smooth sun-to-moon animation",
+        "Cleaned up an older duplicate Typography page so there's only one (under Foundations)",
+        "Theming page shows the real colors used in light and dark mode side by side, so designers and developers can compare exact tones at a glance",
+        "The whole product is now called Dubai Police Design System 2.0 (DPDS 2.0). Older draft names have been removed throughout",
+        "Example branding swapped from a placeholder brand to DPDS, and example email addresses now use @dubaipolice.gov.ae"
+      ],
+      "files": [
+        "src/pages/introduction-page.tsx",
+        "src/pages/project-structure-page.tsx",
+        "src/pages/theming-page.tsx",
+        "src/pages/dark-mode-page.tsx",
+        "src/components/docs/docs-page.tsx",
+        "src/components/docs/prose.tsx",
+        "src/components/docs/index.ts",
+        "src/components/ui/theme-toggle.tsx",
+        "src/components/ui/header.tsx",
+        "src/components/app-sidebar.tsx",
+        "src/App.tsx",
+        "src/locales/en.json",
+        "package.json",
+        "index.html",
+        "docs/STEP_8_DISCOVERY.md",
+        "docs/STEP_8_MIGRATION_LOG.md",
+        "docs/STEP_9_BACKLOG.md"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "type": "added",
+      "summary": "Nine new layout-related pages and seven new building blocks",
+      "details": [
+        "Added pages for: Aspect Ratio, Separator, Container, Collapsible, Scroll Area, Grid, Stack, Accordion, Resizable",
+        "Seven new building blocks teams can use: Aspect Ratio (keeps image proportions), Container (centered content with a max width), Collapsible (show/hide sections), Scroll Area (custom scrollbars), Grid (responsive layouts), Stack (vertical or horizontal stacks with optional dividers), Resizable (drag-to-resize panels)",
+        "The original plan listed only three of these — we discovered four more were also missing and built them too",
+        "All pages verified to load successfully"
+      ],
+      "files": [
+        "src/pages/aspect-ratio-page.tsx",
+        "src/pages/separator-page.tsx",
+        "src/pages/container-page.tsx",
+        "src/pages/collapsible-page.tsx",
+        "src/pages/scroll-area-page.tsx",
+        "src/pages/grid-page.tsx",
+        "src/pages/stack-page.tsx",
+        "src/pages/accordion-page.tsx",
+        "src/pages/resizable-page.tsx",
+        "src/components/ui/aspect-ratio.tsx",
+        "src/components/ui/container.tsx",
+        "src/components/ui/collapsible.tsx",
+        "src/components/ui/scroll-area.tsx",
+        "src/components/ui/grid.tsx",
+        "src/components/ui/stack.tsx",
+        "src/components/ui/resizable.tsx",
+        "src/pages/ui-components-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json",
+        "package.json",
+        "docs/STEP_7F_DISCOVERY.md",
+        "docs/STEP_7F_MIGRATION_LOG.md"
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "type": "added",
+      "summary": "Six new Feedback & Overlay pages, plus updated Alert styles",
+      "details": [
+        "Added pages for: Spinner, Progress, Alert, Popover, Hover Card, and Drawer/Sheet",
+        "Two new building blocks: Spinner (loading indicator) and Hover Card (preview-on-hover popover)",
+        "Alerts can now appear in four tones — info, success, warning, and error — matching how the rest of the system uses color",
+        "Clarified the difference between Drawer (mobile, drag-to-dismiss) and Sheet (desktop side panels) on a shared documentation page"
+      ],
+      "files": [
+        "src/pages/spinner-page.tsx",
+        "src/pages/progress-page.tsx",
+        "src/pages/alert-page.tsx",
+        "src/pages/popover-page.tsx",
+        "src/pages/hover-card-page.tsx",
+        "src/pages/drawer-page.tsx",
+        "src/components/ui/spinner.tsx",
+        "src/components/ui/hover-card.tsx",
+        "src/components/ui/alert.tsx",
+        "src/App.tsx",
+        "src/locales/en.json",
+        "package.json",
+        "docs/STEP_7E_DISCOVERY.md",
+        "docs/STEP_7E_MIGRATION_LOG.md"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "changed",
+      "summary": "Cleaned up leftover old code and translated more hardcoded text",
+      "details": [
+        "Removed unused leftover code from an older shared page that's no longer needed by Badges, Breadcrumb, Stepper, or Menu — each of those now has its own dedicated page",
+        "Took five strings on the Colors page and three on the Iconography page out of hardcoded English and into the translation system, so they're ready for Arabic and other languages",
+        "Decided to keep Progress Tracker and Stepper as two separate building blocks because they're used differently — the older plan to merge them won't work",
+        "Flagged that table headers across the eight Foundation pages still need translating — that's a separate follow-up task"
+      ],
+      "files": [
+        "src/pages/ui-components-page.tsx",
+        "src/pages/colors-page.tsx",
+        "src/pages/iconography-page.tsx",
+        "src/locales/en.json",
+        "docs/STEP_2_DECISIONS.md",
+        "docs/STEP_7D_HOUSEKEEPING.md"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Data Table page with nine real-world examples",
+      "details": [
+        "Covers everything teams typically need: searching, sorting, filtering by status, selecting rows, row actions, an Add button, empty state, and loading state",
+        "Uses twelve realistic example tickets across different statuses, priorities, and assignees so teams can see how a real CRM table would look"
+      ],
+      "files": [
+        "src/pages/data-table-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "Ten new pages for Data Display and Navigation",
+      "details": [
+        "Added pages for: Badge, Avatar, Skeleton (loading shape), Breadcrumb, Pagination, Stepper, Command palette, Menu, Context Menu (right-click menu), and Navbar",
+        "Four new building blocks for teams to use: Pagination, Command palette, Context Menu, and Navbar",
+        "Renamed the older Navigation Menu file for clarity"
+      ],
+      "files": [
+        "src/pages/badge-page.tsx",
+        "src/pages/avatar-page.tsx",
+        "src/pages/skeleton-page.tsx",
+        "src/pages/breadcrumb-page.tsx",
+        "src/pages/pagination-page.tsx",
+        "src/pages/stepper-page.tsx",
+        "src/pages/command-page.tsx",
+        "src/pages/menu-page.tsx",
+        "src/pages/context-menu-page.tsx",
+        "src/pages/navbar-page.tsx",
+        "src/components/ui/pagination.tsx",
+        "src/components/ui/command.tsx",
+        "src/components/ui/context-menu.tsx",
+        "src/components/ui/navbar.tsx",
+        "src/components/ui/menu.tsx",
+        "src/App.tsx",
+        "src/locales/en.json",
+        "package.json",
+        "docs/STEP_7B_DISCOVERY.md",
+        "docs/STEP_7B_MIGRATION_LOG.md"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "Four new Form & Input pages, including a Combobox",
+      "details": [
+        "Added Label, Switch, Slider, and Combobox pages",
+        "Combobox is a new control that combines a dropdown with a search-and-filter field — supports single or multi-select, grouping, custom entry, and loading from a server",
+        "Switch and Slider pages each show seven real-world examples (notification settings list, range with two thumbs, vertical orientation, and more)",
+        "All ten Form & Input pages now point to real documentation — no more 'Coming Soon' placeholders"
+      ],
+      "files": [
+        "src/pages/label-page.tsx",
+        "src/pages/switch-page.tsx",
+        "src/pages/slider-page.tsx",
+        "src/pages/combobox-page.tsx",
+        "src/components/ui/combobox.tsx",
+        "src/App.tsx",
+        "src/components/app-sidebar.tsx",
+        "src/locales/en.json",
+        "package.json",
+        "docs/STEP_7A_DISCOVERY.md",
+        "docs/STEP_7A_MIGRATION_LOG.md"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "Five brand-new components: Tag, Banner, Empty State, List, and Stat Tile",
+      "details": [
+        "Tag — colored labels with selected and removable variants, six colors, two sizes. Acts as a clickable button when needed",
+        "Banner — full-width notice at the top of a page (info, success, warning, error) with an optional action button and dismiss control",
+        "Empty State — friendly empty-space message for when there's nothing to show (no results, no data, error, no permission)",
+        "List — flexible rows for items with a leading icon, title, description, and trailing action. Comes in dense and comfortable spacing, with optional dividers",
+        "Stat Tile — KPI summary card with a label, big value, up/down change indicator, icon, and a small inline chart line"
+      ],
+      "files": [
+        "src/components/ui/tag.tsx",
+        "src/components/ui/banner.tsx",
+        "src/components/ui/empty-state.tsx",
+        "src/components/ui/empty-state-hero.tsx",
+        "src/components/ui/list.tsx",
+        "src/components/ui/stat-tile.tsx",
+        "src/pages/tag-page.tsx",
+        "src/pages/banner-page.tsx",
+        "src/pages/empty-state-page.tsx",
+        "src/pages/list-page.tsx",
+        "src/pages/stat-tile-page.tsx",
+        "src/components/ui/upcoming-appointments.tsx",
+        "src/pages/services-listing-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json",
+        "docs/STEP_6_NEW_COMPONENTS.md"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "Each component page now lists the design tokens it uses",
+      "details": [
+        "Every component page (Button, Input, Select, Card, Tabs, Tooltip, Toast, Dialog, Sidebar, Form, Table, Textarea, Checkbox, Radio, Datepicker, Input OTP, File Upload) now ends with a footer naming the foundations the component depends on — and links straight to each foundation page",
+        "Helps teams see at a glance that, for example, Tooltips use Colors, Radius, Spacing, Typography, Elevation, and Motion"
+      ],
+      "files": [
+        "docs/STEP_5_FOUNDATIONS.md",
+        "src/pages/buttons-page.tsx",
+        "src/pages/input-page.tsx",
+        "src/pages/select-page.tsx",
+        "src/pages/card-page.tsx",
+        "src/pages/tabs-page.tsx",
+        "src/pages/tooltip-page.tsx",
+        "src/pages/toast-page.tsx",
+        "src/pages/dialog-page.tsx",
+        "src/pages/sidebar-page.tsx",
+        "src/pages/form-page.tsx",
+        "src/pages/table-page.tsx",
+        "src/pages/textarea-page.tsx",
+        "src/pages/checkbox-page.tsx",
+        "src/pages/radio-page.tsx",
+        "src/pages/datepicker-page.tsx",
+        "src/pages/input-otp-page.tsx",
+        "src/pages/file-upload-page.tsx"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Accessibility page with rules, checklist, and external resources",
+      "details": [
+        "Covers five core topics: Keyboard, Screen reader (ARIA), Color contrast, Motion, and Touch targets",
+        "Eight-item pre-merge checklist for teams to run through before shipping any feature",
+        "Curated external resources: WCAG, ARIA, axe DevTools, WebAIM, Inclusive Components",
+        "All eight foundation pages (Colors, Typography, Spacing, Radius, Motion, Elevation, Iconography, Accessibility) are now complete — no more 'Coming Soon' placeholders"
+      ],
+      "files": [
+        "src/pages/accessibility-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "changed",
+      "summary": "Added animated icons section to the Iconography page",
+      "details": [
+        "New section showing six animated icons — tickets, completed request, and four general motion icons",
+        "Each animated icon plays automatically. A link points to the full gallery of 52 icons for browsing"
+      ],
+      "files": [
+        "src/pages/iconography-page.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Iconography page with live icon library, sizes, and usage rules",
+      "details": [
+        "Sample of eight commonly used icons (Settings, Bell, Mail, Calendar, Search, Download, Check, Alert)",
+        "Size guide: 16px, 20px, 24px, 32px — each shown with a live preview and typical uses",
+        "Line-thickness guide and color examples",
+        "Common patterns: icon-only button, icon + text, decorative icon, and leading icon in input field",
+        "Six accessibility and usage rules to follow when adding icons"
+      ],
+      "files": [
+        "src/pages/iconography-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Elevation page with shadow styles and layering rules",
+      "details": [
+        "Added four named shadow styles for common surfaces (card, popover, modal, toast)",
+        "Added a nine-level layering system so cards, popovers, modals, tooltips, and more always stack in the right order — no more guessing layer numbers",
+        "Page shows the named shadows next to the full Tailwind shadow scale and explains when to use each"
+      ],
+      "files": [
+        "src/pages/elevation-page.tsx",
+        "src/index.css",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Motion page with duration and easing options",
+      "details": [
+        "Defines a five-step duration scale (instant → slower) and a small set of easing curves teams can use",
+        "Hover-to-play demos let teams see exactly how each duration and easing feels",
+        "Reduced-motion section reminds teams to respect a user's 'reduce motion' setting — and includes ready-to-copy code for apps to add",
+        "Usage rules: when small things should be fast, when bigger things should be slow, what easing to use for entry vs exit, and more"
+      ],
+      "files": [
+        "src/pages/motion-page.tsx",
+        "src/index.css",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Border Radius page showing the corner-rounding scale",
+      "details": [
+        "Nine corner-rounding values (none → very rounded → fully rounded) shown as live shape samples",
+        "Sample card mixes different corner styles (input, button, container, avatar) to show how they nest visually",
+        "Usage rules cover consistency, outer-bigger-than-inner nesting, when to use 'fully rounded', and avoiding random values"
+      ],
+      "files": [
+        "src/pages/radius-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Spacing & Layout page with the spacing scale and layout tips",
+      "details": [
+        "17-step spacing scale from 0 to 128px shown as live width bars",
+        "Reference for container widths (prose width through extra-large)",
+        "Cheat-sheet of common spacing utilities (padding, margin, gap, max width)",
+        "Usage rules: stick to the scale, prefer gap over manual spacing, and support right-to-left languages"
+      ],
+      "files": [
+        "src/pages/spacing-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Typography page with fonts, sizes, and writing rules",
+      "details": [
+        "Two fonts shown with every available weight: Dubai (sans-serif) and Bukra (monospace)",
+        "Nine-step type scale from Display headlines down to small Caption labels — each shown at actual size with proper line height",
+        "Usage rules cover line length, line spacing, using font weight to show hierarchy, and when monospace is appropriate"
+      ],
+      "files": [
+        "src/pages/typography-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Colors page with the full palette and color tokens",
+      "details": [
+        "Colors page shows about 29 named colors (surface, brand, status, border, sidebar) with light and dark values side by side",
+        "Color contrast labels (AAA, AA, AA Large) on each text color so teams can see at a glance which combinations are accessible",
+        "Full palette shown in a familiar tailwindcss.com style — 12 shades for each of the 16 color scales (gray, slate, sage, brand greens, blues, status reds and yellows and greens, and more)",
+        "Click any color to copy its variable name, shift-click to copy the Tailwind class",
+        "Includes an opacity demo and a sample notification card to show colors in real use"
+      ],
+      "files": [
+        "src/components/docs/foundation-page.tsx",
+        "src/components/docs/token-swatch.tsx",
+        "src/components/docs/token-scale.tsx",
+        "src/components/docs/uses-tokens.tsx",
+        "src/components/docs/index.ts",
+        "src/pages/colors-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New File Upload page (single and multi-file)",
+      "details": [
+        "Replaces the older shared documentation",
+        "Covers both single-file and multi-file uploaders on one page",
+        "Ten total examples: five for single-file (default, file-type filter, label, change handler, images only) and five for multi-file (default, max count, file-type filter, change handler, label)"
+      ],
+      "files": [
+        "src/pages/file-upload-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New One-Time Password (OTP) input page",
+      "details": [
+        "Replaces the 'Coming Soon' placeholder",
+        "Eight examples: default, with a separator between digit groups, digits-only, four-digit short code, controlled value, auto-submit when complete, error state, and disabled",
+        "Live demos for controlled value and auto-submit on completion"
+      ],
+      "files": [
+        "src/pages/input-otp-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New Datepicker page",
+      "details": [
+        "Replaces the older shared documentation",
+        "Shows the recommended pattern (popover + calendar) instead of a single all-in-one control",
+        "Eight examples: single date, date range (two months side by side), multiple dates, min/max date limits, inline picker, default month, year/month dropdown navigation, and with a label"
+      ],
+      "files": [
+        "src/pages/datepicker-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New Radio page",
+      "details": [
+        "Replaces the older shared documentation",
+        "Eight examples covering default value, controlled value, descriptions, horizontal layout, disabling the whole group or just one option, and required field",
+        "Live demo for controlled selection (delivery method picker)"
+      ],
+      "files": [
+        "src/pages/radio-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New Checkbox page",
+      "details": [
+        "Replaces the older shared documentation",
+        "Nine examples including indeterminate state, select-all parent-and-child pattern, and multi-select groups",
+        "Live demos for indeterminate cycling and parent-child selection"
+      ],
+      "files": [
+        "src/pages/checkbox-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "New Textarea page",
+      "details": [
+        "Replaces the older shared documentation",
+        "Follows the standard layout: preview, install, usage, examples, props, accessibility, related",
+        "Examples cover auto-resize, character counter, fixed height, error state, disabled, and read-only"
+      ],
+      "files": [
+        "src/pages/textarea-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "changed",
+      "summary": "Changelog entries now use the standard card style",
+      "details": [
+        "Updated visual style — the gradient border, soft background, and subtle dark-mode shadow now match the rest of the docs"
+      ],
+      "files": [
+        "src/pages/changelog-page.tsx"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "added",
+      "summary": "New Changelog page and automated update workflow",
+      "details": [
+        "New /docs/changelog page that reads from a data file",
+        "Automated reminder so user-visible changes get logged when work is finished",
+        "Adds a skill that handles the changelog update procedure"
+      ],
+      "files": [
+        "src/data/changelog.json",
+        "src/pages/changelog-page.tsx",
+        ".claude/skills/changelog-update/SKILL.md",
+        ".claude/settings.json"
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "docs",
+      "summary": "Ten new dedicated pages — one per component",
+      "details": [
+        "New dedicated pages for: Input, Select, Card, Tabs, Tooltip, Toast, Dialog, Sidebar, Form, and Table",
+        "Each page follows the standard layout: preview, install, usage, examples, props, accessibility, related",
+        "Per-page migration notes kept in the internal log"
+      ],
+      "files": [
+        "src/pages/input-page.tsx",
+        "src/pages/select-page.tsx",
+        "src/pages/card-page.tsx",
+        "src/pages/tabs-page.tsx",
+        "src/pages/tooltip-page.tsx",
+        "src/pages/toast-page.tsx",
+        "src/pages/dialog-page.tsx",
+        "src/pages/sidebar-page.tsx",
+        "src/pages/form-page.tsx",
+        "src/pages/table-page.tsx",
+        "src/App.tsx",
+        "src/locales/en.json"
+      ]
+    }
+  ]
+}

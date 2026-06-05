@@ -1,0 +1,337 @@
+{
+  "common": {
+    "language": "اللغة",
+    "english": "الإنجليزية",
+    "arabic": "العربية"
+  },
+  "sidebar": {
+    "installation": "التثبيت",
+    "installationNew": "التثبيت (المتتبع)",
+    "dashboard": "لوحة التحكم",
+    "uiComponents": "مكونات الواجهة",
+    "forms": "النماذج",
+    "icons": "الأيقونات",
+    "cards": "البطاقات",
+    "buttons": "الأزرار",
+    "badges": "الشارات",
+    "toast": "الإشعارات المنبثقة",
+    "tabs": "علامات التبويب",
+    "modalPopups": "النوافذ المنبثقة",
+    "sideDrawers": "الأدراج الجانبية",
+    "drawer": "الدرج",
+    "table": "الجدول (مع الترقيم والفرز)",
+    "dropdownMenu": "القائمة المنسدلة",
+    "progressBar": "شريط التقدم",
+    "charts": "الرسوم البيانية",
+    "analyticsPage": "لوحة التحليلات",
+    "resizableDashboard": "لوحة قابلة للتغيير",
+    "dashboardsGroup": "لوحات التحكم",
+    "progressTracker": "متتبع التقدم",
+    "cardWidget": "ودجت البطاقة",
+    "cardPatterns": "أنماط البطاقات",
+    "cardPatternKpi": "شبكة المؤشرات",
+    "cardPatternProfile": "شبكة الملفات الشخصية",
+    "cardPatternMix": "تركيبة لوحة التحكم",
+    "cardPatternFlipEsaad": "ودجت إسعاد القلاب",
+    "accordion": "الأكورديون",
+    "breadcrumb": "مسار التنقل",
+    "navigationMenu": "قائمة التنقل",
+    "alert": "التنبيه",
+    "form": "النموذج",
+    "input": "حقل الإدخال",
+    "select": "الاختيار",
+    "checkbox": "مربع الاختيار",
+    "radio": "زر الاختيار",
+    "textarea": "منطقة النص",
+    "datepicker": "منتقي التاريخ",
+    "fileupload": "رفع الملفات",
+    "slider": "شريط التمرير",
+    "toggle": "التبديل",
+    "switch": "المفتاح",
+    "textEditor": "محرر النص",
+    "hugeIcons": "HugeIcons",
+    "pages": "الصفحات",
+    "loginModal": "نافذة تسجيل الدخول",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "pagePreview": "معاينة الصفحات",
+    "animationsCategory": "الرسوم المتحركة",
+    "animations": "عرض الرسوم المتحركة",
+    "bentoDemo": "شبكة بينتو",
+    "emailTemplates": "قوالب البريد",
+    "lottieIcons": "أيقونات Lottie",
+    "profileSwitcher": "محدد الملف الشخصي",
+    "stepper": "خطوات التقدم",
+    "swiper": "سوايبر / سلايدر",
+    "progressTracker": "متتبع التقدم",
+    "services": "قائمة الخدمات",
+    "inquiryDetail": "تفاصيل الاستفسار",
+    "inquiryForm": "نموذج الاستفسار",
+    "serviceStatus": "حالة الخدمة",
+    "confirmation": "تأكيد",
+    "transactionEnquiry": "استفسار المعاملة",
+    "requestDetail": "تفاصيل الطلب"
+  },
+  "layout": {
+    "searchProducts": "ابحث عن المنتجات..."
+  },
+  "dashboard": {
+    "totalRevenue": "إجمالي الإيرادات",
+    "subscriptions": "الاشتراكات",
+    "sales": "المبيعات",
+    "activeNow": "النشطون الآن",
+    "fromLastMonth20": "+20.1% مقارنة بالشهر الماضي",
+    "fromLastMonth180": "+180.1% مقارنة بالشهر الماضي",
+    "fromLastMonth19": "+19% مقارنة بالشهر الماضي",
+    "sinceLastHour": "+201 منذ الساعة الماضية",
+    "overview": "نظرة عامة",
+    "chartPlaceholder": "منطقة الرسم البياني",
+    "recentSales": "المبيعات الأخيرة",
+    "recentSalesDescription": "لقد حققت 265 عملية بيع هذا الشهر.",
+    "clickMe": "اضغط هنا",
+    "welcome": "مرحباً، {{name}}",
+    "licenseInfo": "ترخيص محاماة · نقابة محامي دبي · نشط",
+    "nearestStation": "أقرب مركز شرطة",
+    "callPolice": "اتصل 901",
+    "takeTour": "جولة تعريفية",
+    "pendingActions": "إجراءاتي المعلقة",
+    "totalRequests": "إجمالي الطلبات",
+    "completedRequests": "مكتملة",
+    "activeRequests": "نشطة",
+    "unapprovedRequests": "غير معتمدة",
+    "requestsOverview": "نظرة عامة على الطلبات"
+  },
+  "cards": {
+    "title": "البطاقات",
+    "subtitle": "صفحة مخصصة لمعاينة تخطيطات البطاقات.",
+    "completedOrders": "الطلبات المكتملة"
+  },
+  "charts": {
+    "title": "الرسوم البيانية",
+    "subtitle": "رسوم بيانية داخل مكوّن CardWidget.",
+    "monthlyTraffic": "حركة الزيارات الشهرية",
+    "revenueSplit": "توزيع الإيرادات",
+    "conversionTrend": "اتجاه التحويل",
+    "performanceRadar": "رادار الأداء"
+  },
+  "buttons": {
+    "title": "الأزرار",
+    "subtitle": "صفحة مخصصة لمعاينة أشكال وأحجام الأزرار.",
+    "variants": "الأنواع",
+    "sizes": "الأحجام"
+  },
+  "requestDetail": {
+    "title": "تفاصيل الطلب",
+    "submissionDate": "تاريخ التقديم",
+    "print": "طباعة",
+    "export": "تصدير",
+    "breadcrumb": {
+      "home": "الرئيسية",
+      "requests": "الطلبات",
+      "details": "تفاصيل الطلب"
+    },
+    "clientName": "اسم الموكل",
+    "clientNameValue": "محمد عبد الله المنصوري",
+    "clientStatus": "حالة الموكل",
+    "emiratesId": "الهوية الإماراتية",
+    "mobile": "متحرك",
+    "email": "بريد إلكتروني",
+    "requestInfo": "معلومات الطلب",
+    "referenceNo": "الرقم المرجعي",
+    "serviceType": "نوع الخدمة",
+    "serviceTypeValue": "فتح بلاغ شيك بدون رصيد",
+    "agencyIssueDate": "تاريخ اصدار الوكالة",
+    "agencyExpiry": "تاريخ انتهاء الوكالة",
+    "agencyType": "نوع وحالة الوكالة",
+    "agencyTypeValue": "خاصة",
+    "responsibleLawyers": "المحامين المسؤولين",
+    "documents": "المستندات المرتبطة",
+    "clearFilter": "مسح الفلترة",
+    "filterDocName": "يرجى ادخال رقم الطلب",
+    "filterStatus": "يرجى تحديد الحالة",
+    "filterDate": "يوم / شهر / سنة",
+    "results": "نتيجة",
+    "investigatorLabel": "المحقق المسؤول",
+    "investigatorRank": "ملازم أول",
+    "investigatorName": "خليفة محمد أحمد سعيد",
+    "investigatorStation": "مركز شرطة المرقبات",
+    "liveChat": "محادثة فورية",
+    "actionLog": "سجل الإجراءات",
+    "col": {
+      "docName": "اسم المستند",
+      "number": "الرقم",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "suspended": "موقوف",
+      "inProgress": "قيد الإجراء",
+      "accepted": "مقبولة",
+      "underReview": "قيد التدقيق",
+      "sent": "مرسلة",
+      "rejected": "مرفوضة",
+      "active": "فعالة"
+    },
+    "doc": {
+      "cheque": "صورة الشيك",
+      "bankStmt": "كشف حساب بنكي",
+      "idCopy": "صورة الهوية",
+      "affidavit": "إفادة المشتكي"
+    },
+    "log": {
+      "submitted": "تم تقديم الطلب",
+      "submittedDate": "28 نوفمبر 2025، 09:30 ص",
+      "submittedDesc": "تم استلام الطلب بنجاح من قبل النظام",
+      "idVerified": "التحقق من الهوية",
+      "idVerifiedDate": "29 نوفمبر 2025، 10:00 ص",
+      "idVerifiedDesc": "تم التحقق من هوية الموكل عبر UAE PASS",
+      "inProgress": "قيد الإجراء",
+      "inProgressDate": "29 نوفمبر 2025، 10:00 ص",
+      "inProgressDesc": "جاري مراجعة المستندات المرفقة وإعداد صح...",
+      "prosecution": "قرار النيابة",
+      "prosecutionDesc": "بانتظار قرار النيابة العامة"
+    }
+  },
+  "docs": {
+    "gettingStarted": {
+      "eyebrow": "البدء",
+      "installation": {
+        "title": "التثبيت",
+        "description": "قم بإعداد قالب خدمات شرطة دبي وابدأ في بناء خدمتك الأولى.",
+        "whatBuilding": {
+          "title": "ما الذي ستبنيه",
+          "p1": "القالب عبارة عن مشروع Vite + React + TypeScript يستهلك نظام تصميم شرطة دبي المنشور. يأتي مع شريط جانبي مُعد مسبقاً، ورأس، وإدارة السمات، وتبديل اللغة، وخدمة لوحة معلومات نموذجية حتى يظل الإطار البصري متناسقاً عبر جميع فرق الخدمات.",
+          "p2": "ستقوم بإنشاء نسخة جديدة من القالب، وتثبيت الاعتماديات من GitHub Packages، ثم بناء خدمتك داخله — عادةً بمساعدة الذكاء الاصطناعي الذي يقرأ ملف CLAUDE.md المرفق في جذر المستودع."
+        },
+        "prerequisites": {
+          "title": "المتطلبات الأساسية",
+          "items": {
+            "node": "Node.js الإصدار 20 أو أحدث، بالإضافة إلى npm.",
+            "github": "حساب GitHub مع صلاحية الوصول إلى منظمة dpds-gov. إذا لم يكن لديك، اطلب من رامش أو قائد الفريق دعوتك.",
+            "pat": "رمز وصول شخصي (Personal Access Token) بصلاحية read:packages. القسم التالي يوضح خطوات إنشائه.",
+            "editor": "اختياري لكن موصى به — Claude Code أو Cowork مثبت على جهازك. ملف CLAUDE.md في القالب مكتوب للبناء بمساعدة الذكاء الاصطناعي، وسير العمل يفترض إمكانية لصق المتطلبات أو المخططات في المحادثة."
+          }
+        },
+        "pat": {
+          "title": "أنشئ رمز الوصول الشخصي",
+          "description": "يتطلب GitHub Packages رمزاً لتنزيل نظام التصميم. تقوم بإنشائه مرة واحدة وحفظه في مدير كلمات المرور.",
+          "steps": {
+            "s1": "اذهب إلى https://github.com/settings/tokens واضغط Generate new token، ثم اختر الخيار classic.",
+            "s2": "أعطه ملاحظة (Note) مثل dpds-starter-install لتتمكن من التعرف عليه لاحقاً.",
+            "s3": "اضبط Expiration على 90 يوماً. ستقوم بتجديده عند انتهاء صلاحيته — هذا متعمد.",
+            "s4": "تحت Scopes، فعّل read:packages. فعّل repo أيضاً إذا كان مستودع خدمتك خاصاً (معظمها كذلك).",
+            "s5": "اضغط Generate token وانسخ النص الذي يبدأ بـ ghp_... فوراً — GitHub يعرضه مرة واحدة فقط.",
+            "s6": "احفظ الرمز في مدير كلمات المرور. ستلصقه مرة أخرى في كل مرة تنشئ فيها مستودع خدمة جديد، فلا تفقده."
+          }
+        },
+        "repo": {
+          "title": "أنشئ مستودع خدمة من القالب",
+          "description": "كل خدمة تبدأ كنسخة جديدة من قالب service-starter. استخدم واجهة GitHub الويب — الاختصار عبر سطر الأوامر يضع المستودع في المكان الخطأ.",
+          "steps": {
+            "s1": "افتح https://github.com/dpds-gov/service-starter في المتصفح.",
+            "s2": "اضغط Use this template ثم Create a new repository.",
+            "s3": "مهم — في القائمة المنسدلة Owner، اختر dpds-gov. القيمة الافتراضية تكون حسابك الشخصي، وهذا يكسر مصادقة الحزم.",
+            "s4": "سمِّ المستودع — اسم وصفي مثل vehicle-renewal-service أو fine-payment-lookup.",
+            "s5": "اختر Private. مستودعات الخدمات تكون افتراضياً خاصة حتى تجهز للنشر.",
+            "s6": "اضغط Create repository."
+          },
+          "ownerCallout": {
+            "title": "لماذا يهم المالك",
+            "body": "إذا كان المستودع تحت حسابك الشخصي بدلاً من dpds-gov، فلن تنجح مصادقة GitHub Packages في تثبيت نظام التصميم وستحصل على خطأ 404. اختر دائماً dpds-gov من قائمة Owner — هذا هو الخطأ الأكثر شيوعاً عند الإعداد."
+          }
+        },
+        "localSetup": {
+          "title": "النسخ والإعداد محلياً",
+          "intro": "بمجرد إنشاء المستودع تحت dpds-gov، انسخه إلى جهازك وأعد ملف البيئة.",
+          "envInstruction": "افتح ملف .env الجديد في أي محرر. الصق رمز الوصول الشخصي بعد سطر GH_PACKAGES_TOKEN=. احفظ وأغلق.",
+          "openUrl": "افتح الرابط الذي يطبعه Vite — عادةً http://localhost:5173. ستشاهد صفحة الترحيب مع شريط شرطة دبي الجانبي ورابط لوحة المعلومات النموذجية."
+        },
+        "skill": {
+          "title": "ثبّت مهارة DPDS في أداة الذكاء الاصطناعي لديك",
+          "intro": "لم يعد القالب ينسخ مهارة الذكاء الاصطناعي تلقائياً عند التثبيت. شغّل أمراً واحداً لإضافتها إلى أي أداة برمجة بالذكاء الاصطناعي تستخدمها — يكتب الأمر المهارة بالتنسيق الأصلي لتلك الأداة من مصدر واحد.",
+          "autoNote": "بدون خيارات، يكتشف الأمر أدوات الذكاء الاصطناعي المهيّأة في مشروعك ويثبّت فيها. استخدم --target لاختيار أداة واحدة، أو --all لكل الأدوات المدعومة.",
+          "tools": "الأدوات المدعومة: Claude Code وCursor وWindsurf وGitHub Copilot وAntigravity.",
+          "refresh": "أعد تشغيل الأمر بعد ترقية @dpds-gov/design-system لجلب تحديثات المهارة — أضف --force للكتابة فوق الملفات الموجودة. الملفات المُولّدة خاصة بكل مطوّر ومستبعدة من Git، فيثبّت كل شخص المهارة للأداة التي يستخدمها."
+        },
+        "firstService": {
+          "title": "ابنِ خدمتك الأولى",
+          "description": "القالب مبني ليُدار بواسطة مساعد ذكاء اصطناعي. ملف CLAUDE.md يخبر المساعد بكيفية استخدام نظام التصميم، وكيفية التعامل مع المكونات المفقودة، وماذا يُخرج عند الانتهاء.",
+          "steps": {
+            "s1": "افتح مجلد المشروع في Claude Code أو Cowork.",
+            "s2": "ضع متطلباتك أو لقطة شاشة لمخطط أو رسماً تخطيطياً في المحادثة.",
+            "s3": {
+              "prefix": "أرسل:",
+              "prompt": "ابنِ هذه الخدمة وفقاً لـ CLAUDE.md."
+            },
+            "s4": "يقرأ المساعد CLAUDE.md، ينشئ مجلداً جديداً تحت src/services/، يبني الخدمة باستخدام مكونات نظام التصميم فقط، ويُخرج ملخصاً نهائياً يشمل المسارات والملفات المُنشأة وأي مكونات مفقودة."
+          },
+          "placeholderNote": "إذا لم يكن لدى نظام التصميم مكون تحتاجه، يضع المساعد عنصراً نائباً مرئياً في الصفحة، يسجله في ملف MISSING_COMPONENTS.md داخل مجلد الخدمة، ويوفر رابط بريد إلكتروني مُعبأ مسبقاً في الملخص لطلب المكون المفقود من مالك نظام التصميم."
+        },
+        "stayUpToDate": {
+          "title": "ابقَ محدّثاً",
+          "recommendedLabel": "موصى به",
+          "dependabot": {
+            "label": "تلقائياً",
+            "body": "يفتح Dependabot طلب سحب أسبوعياً يرفع @dpds-gov/design-system إلى آخر إصدار minor أو patch. دمج الطلب يجلب الرموز والمكونات وإصلاحات الأخطاء الجديدة إلى خدمتك. القالب يأتي بهذا الإعداد جاهزاً."
+          },
+          "manual": {
+            "label": "يدوياً",
+            "body": "إذا أردت التحديث أبكر — أو إصدار محدد — شغّل npm install @dpds-gov/design-system@latest، ثم احفظ تغييرات package.json و package-lock.json."
+          }
+        },
+        "troubleshooting": {
+          "title": "حل المشاكل",
+          "cols": {
+            "symptom": "العَرَض",
+            "cause": "السبب المحتمل",
+            "fix": "الحل"
+          },
+          "rows": {
+            "401": {
+              "symptom": "npm install يعيد خطأ 401",
+              "cause": "انتهت صلاحية رمز الوصول الشخصي، أو أنه أُنشئ بدون صلاحية read:packages.",
+              "fix": "أنشئ رمزاً جديداً على https://github.com/settings/tokens مع تفعيل read:packages، الصقه في .env، وأعد تشغيل npm install."
+            },
+            "404": {
+              "symptom": "npm install يعيد خطأ 404",
+              "cause": "المستودع ليس تحت منظمة dpds-gov، أو سطر النطاق في .npmrc غير متطابق.",
+              "fix": "تأكد أن مالك المستودع على GitHub هو dpds-gov. ثم افتح .npmrc وتأكد أن السطر الأول يقرأ @dpds-gov:registry=https://npm.pkg.github.com."
+            },
+            "lightMode": {
+              "symptom": "ألوان الوضع الفاتح تبدو خاطئة أو رمادية افتراضياً",
+              "cause": "سطر @reference في src/index.css مفقود أو معلَّق، فلا يستطيع Tailwind رؤية رموز نظام التصميم.",
+              "fix": "افتح src/index.css وتأكد أن السطر الأول هو @reference \"@dpds-gov/design-system/styles.source.css\"; — يجب أن يأتي قبل @import \"tailwindcss\";."
+            },
+            "ci": {
+              "symptom": "CI يفشل في طلب سحب",
+              "cause": "سر المستودع GH_PACKAGES_TOKEN غير مضبوط، فلا يستطيع منفذ التشغيل تثبيت نظام التصميم.",
+              "fix": "في مستودع الخدمة، اذهب إلى Settings → Secrets and variables → Actions وأضف GH_PACKAGES_TOKEN بنفس رمز الوصول الشخصي الذي استخدمته محلياً."
+            }
+          }
+        },
+        "nextSteps": {
+          "title": "الخطوات التالية",
+          "description": "الآن وقد أصبح القالب يعمل، إليك أين تذهب بعد ذلك.",
+          "externalLabel": "خارجي",
+          "cards": {
+            "claudeMd": {
+              "title": "اقرأ CLAUDE.md",
+              "body": "ملف توجيه المساعد المرفق في مستودع خدمتك. يوثّق نظام التصميم، والقواعد التي تتبعها كل خدمة، وسير العمل للبناء بمساعدة الذكاء الاصطناعي.",
+              "link": "افتح على GitHub"
+            },
+            "components": {
+              "title": "تصفح المكونات",
+              "body": "اطلع على كل مكون ونوع ونمط يصدّره نظام التصميم. كل صفحة مكون تحتوي على أمثلة استخدام وجداول الخصائص.",
+              "link": "ابدأ بالأزرار"
+            },
+            "changelog": {
+              "title": "تحقق من سجل التغييرات",
+              "body": "تتبع ما تم شحنه مؤخراً — مكونات جديدة، إصلاحات أخطاء، تغييرات جذرية. يُحدَّث مع كل إصدار.",
+              "link": "عرض سجل التغييرات"
+            }
+          }
+        }
+      }
+    }
+  }
+}
